@@ -26,6 +26,8 @@ class IncidentController{
     const {title, description, value} = req.body;
     const ong_id = req.headers.authorization;
 
+    if (!ong_id) return res.status(422).json({error: 'ID da ong não foi informado'})
+
     const [id] = await connection('incidents').insert({
       title,
       description,
