@@ -1,4 +1,4 @@
-# BeHero - Omnistack Week 11.0
+# Be The Hero - Omnistack Week 11.0
 
 ## Funcionalidades
   - Login de ONG's
@@ -9,13 +9,7 @@
   - Listar todos os casos
   - Entrar em contato com a ONG (via whatsapp ou email)
 
-A Software as a Service to provide a scheduling between barbers and clients.
-
-## Usage
-
-The first step is to create your account, then you can login and choose a barber, check his schedule and make an appointment.
-
-## Technologies
+## Tecnologias
 
 - [Node](https://nodejs.org/en/)
 - [Express](https://expressjs.com/pt-br/)
@@ -25,35 +19,35 @@ The first step is to create your account, then you can login and choose a barber
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [Nodemon](https://nodemon.io/)
 
-## Installation
+## Instalação
 
-Clone the project with
+Clone o projeto com:
 
 ```sh
-git clone https://github.com/CarlosLevir/GoBarber-NodeJs-Rocketseat.git
+git clone https://github.com/dscamargo/be-the-hero.git
 ```
 
-Get in the path project, then install the dependencies with:
+Entre na pasta do projeto e então na pasta `server`:
+
+```sh
+cd server
+```
+
+instale as dependencias, usando:
 
 ```sh
 yarn
 ```
 
-Then, you have to create your postgres database (Or another if you want) and fill your own fields in .env file.
+Então, você precisa criar seu banco de dados sqlite (ou outro de sua preferencia)
 
-Now, you have to create tables with the command:
-
-```sh
-npx sequelize db:migrate
-```
-
-After database config, you can start the server with:
+Para rodas as migrations do projeto, utilize o comando:
 
 ```sh
-yarn start
+npx knex migrate:latest
 ```
 
-If you are in development environment, you can use the development server:
+Se você estiver em ambiente de desenvolvimento, você pode rodar o servidor de desenvolvimento, utilizando o comando:
 
 ```sh
 yarn dev
