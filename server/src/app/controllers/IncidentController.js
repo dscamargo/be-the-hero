@@ -43,7 +43,11 @@ class IncidentController{
     const {id} = req.params;
     const ong_id = req.headers.authorization;
 
+    if (!ong_id) return res.status(400).json({error: 'Não foi informado ONG ID'})
+
     const incident = await connection('incidents').where('id', id).select('ong_id').first();
+
+    if (!incident) return res.status(404).json({error: 'Registro não encontrado'})
 
     if (ong_id !== incident.ong_id) return res.status(401).json({error: 'Operation not permitted'});
 
