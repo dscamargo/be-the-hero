@@ -9,8 +9,6 @@ import './styles.css'
 import heroesImg from '../../assets/heroes.png'
 import logoImg from '../../assets/logo.svg'
 
-// import { Container } from './styles';
-
 export default function Login({history}) {
   const [id, setId] = useState('')
 

@@ -1,5 +1,10 @@
 # Be The Hero - Omnistack Week 11.0
 
+<a href="https://opensource.org/licenses/MIT">
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
+</a>
+
+
 ## Funcionalidades
   - Login de ONG's
   - Logout de ONG's

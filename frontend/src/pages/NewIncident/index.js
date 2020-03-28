@@ -7,7 +7,6 @@ import api from '../../services/api'
 import logoImg from '../../assets/logo.svg'
 
 import './styles.css'
-// import { Container } from './styles';
 
 export default function NewIncident({history}) {
   const ongId = localStorage.getItem('ongId')

@@ -7,7 +7,6 @@ import logoImg from '../../assets/logo.svg'
 import api from '../../services/api'
 
 import './styles.css'
-// import { Container } from './styles';
 
 export default function Register({history}) {
   const [name, setName] = useState('')
